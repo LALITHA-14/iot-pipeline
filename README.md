@@ -53,19 +53,25 @@ Producer → Pub/Sub Emulator → Consumer → MySQL Database
 
 ```
 iot-pipeline/
+│   .env.example
+│   .gitignore
+│   db_init.sql
+│   docker-compose.yml
+│   gcloud
+│   publish.py
+│   pubsub_init.py
+│   README.md
+│   setup_pubsub.py
 │
-├── producer/
-│   └── app.py
+├───consumer
+│       app.py
+│       Dockerfile
+│       requirements.txt
 │
-├── consumer/
-│   └── app.py
-│
-├── mysql/
-│   └── init.sql
-│
-├── docker-compose.yml
-├── publish.py
-└── README.md
+└───producer
+        app.py
+        Dockerfile
+        requirements.txt
 ```
 
 ---
